@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> My Node Site</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body ng-app="myApp" ng-controller="AppCtrl as myApp">
+
+	<header>
+		<nav class="navbar navbar-inverse">
+		<a href="/" class="navbar-brand"> MY SITE </a>
+		<ul class= "nav navbar-nav">
+			<li> <a href="/"> HOME </a></li>
+			<li> <a href="/about"> ABOUT </a></li>
+			<li> <a href="/contact"> CONTACT </a></li>
+		</ul>
+		</nav>
+
+	</header> --> -->
+
+	<%- contentFor('hero') %>
+
+	<section class= "hero">
+	<div class= "hero-content">
+		<h2> Welcome to Lynette's Site! </h2>
+		<p> this is a testing website </p>
+
+	<a href="/" class="btn btn-lg btn-primary"> GET STARTED </a>
+	<a href="/contact" class="btn btn-lg btn-primary"> CONTACT</a>
+
+	</div>
+	</section>
+
+<!-- <script src="lib/js/angularjs/1.4.3/angular.js"></script>
+	<script src="lib/js/ui-grid/3.0.7/ui-grid.js"></script>
+	<script src="main.js"></script> -->
+
+
+	<%- contentFor('body')%>
+	<div class="jumbotron text-center">List of foods you want to eat : </div>
+	 Enter food here: 
+			<input type= "text" ng-model="myApp.display.food">
+			<button type = "button" class="btn btn-primary btn-lg" ng-click="myApp.addFood(myApp.display)"> SEND </button>	
+
+	<ul>
+		<li ng-repeat="food in myApp.foods">
+			{{display.foods}}
+		</li>
+
+	</ul>
+		
+
+<!--	<footer>
+		Awesome Site. Copyright &copy; 2017
+	</footer>
+</body>
+</html>
